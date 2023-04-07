@@ -1,7 +1,7 @@
 import csv
 
 finalList = []
-with open("orders.txt", 'r') as file:
+with open("orders.txt", 'r', encoding='UTF8') as file:
     lines = file.readlines()
     lines = [line.strip() for line in lines if "Unavailable" not in line]
     for line in lines:
